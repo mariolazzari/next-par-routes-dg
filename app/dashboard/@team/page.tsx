@@ -3,7 +3,7 @@ import { pause } from "@/lib/utils";
 async function TeamPage() {
   await pause(3000);
 
-  throw new Error("Error loading Team page");
+  // throw new Error("Error loading Team page");
 
   return (
     <section className="h-96 w-96 border-2 rounded-lg p-4">

@@ -1,14 +1,13 @@
+import { ReactNode } from "react";
 import Header from "./Header";
 
-export default function DashboardLayout({
-  children,
-  team,
-  analytics,
-}: Readonly<{
-  children: React.ReactNode;
-  team: React.ReactNode;
-  analytics: React.ReactNode;
-}>) {
+type Props = Readonly<{
+  children: ReactNode;
+  team: ReactNode;
+  analytics: ReactNode;
+}>;
+
+function DashboardLayout({ children, team, analytics }: Props) {
   return (
     <div className="p-8">
       <Header />
@@ -21,3 +20,5 @@ export default function DashboardLayout({
     </div>
   );
 }
+
+export default DashboardLayout;
